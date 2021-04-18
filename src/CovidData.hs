@@ -16,7 +16,7 @@ data CovidData = CovidData {  -- using the order that the csv file uses
 
 data CField = CovidCasesConfirmed | RequiringICUCovidCases | HealthcareWorkersCovidCases | Median_Age
   deriving (Eq, Ord, Show, Enum, Bounded)
-                  
+
 
 
 field2fun :: CField -> CovidData -> Double
@@ -31,6 +31,8 @@ makeDate  = parseTimeOrError True defaultTimeLocale "%Y/%m/%d"
 --convert each of the strings to an appropriate type in form of tuple
 strToTuple :: [String] -> (Day, Double, Double, Double, Double)
 strToTuple (statisticsProfileDate:covidCasesConfirmed:requiringICUCovidCases:healthcareWorkersCovidCases:median_Age:_)  = 
+-- strToTuple (:-:-:-:-:-:-:-:statisticsProfileDate:covidCasesConfirmed:-:-:-:-:-:-:-:-:-:-:-:-:requiringICUCovidCases:healthcareWorkersCovidCases:median_Age:_)  = 
+
                (makeDate statisticsProfileDate,
                 read covidCasesConfirmed :: Double,
                 read requiringICUCovidCases :: Double,
