@@ -2,9 +2,9 @@ name:                Covid-Data-Analysis
 version:             0.1.0.0
 github:              "githubuser/Covid-Data-Analysis"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2021 Author name here"
+author:              "Robert Solomon"
+maintainer:          "20079462@mail.wit.ie"
+copyright:           "2021 Robert Solomon"
 
 extra-source-files:
 - README.md
