@@ -1,3 +1,3 @@
-# Changelog for Covid-Data-Analysis
+# Changelog for Covid-Analysis
 
 ## Unreleased changes
